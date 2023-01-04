@@ -1,5 +1,7 @@
 package me.thealgorithm476.osfetch;
 
+import java.util.Arrays;
+
 /**
  * List of all CPU Architectures OsFetch might return.
  * <p>
@@ -35,4 +37,15 @@ public enum Architecture {
      * @since 2.0.0
      */
     public String[] getNames() { return this.NAMES; }
+
+    /**
+     * Returns the Architecture object with given name.
+     * @param name The name of the Architecture; can be the official name, or one of the most-used names
+     * @return The Architecture with given name; {@link #OTHER} when none was found
+     * @since 2.0.0
+     */
+    public static Architecture forName(String name) {
+        for (Architecture architecture : Architecture.values()) if (Arrays.asList(architecture.getNames()).contains(name)) return architecture;
+        return OTHER;
+    }
 }
