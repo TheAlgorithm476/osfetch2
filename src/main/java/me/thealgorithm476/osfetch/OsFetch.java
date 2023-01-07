@@ -21,7 +21,8 @@ public final class OsFetch {
 
     /**
      * Populates OsFetch with the OS Data is needs to parse the Operating System and Architecture this JVM is running on
-     * @implNote This method may be called at any moment, but it is not mandatory. When requesting any data from OsFetch while not populated will auto-populate it.
+     * <p>
+     * This method may be called at any moment, but it is not mandatory. When requesting any data from OsFetch while not populated will auto-populate it.
      * <p>
      * Calling this method multiple times will make it return on any additional call.
      * @since 2.0.0
