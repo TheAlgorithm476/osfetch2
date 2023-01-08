@@ -7,6 +7,12 @@ import java.io.InputStreamReader;
 import java.nio.file.Files;
 import java.util.Properties;
 
+/**
+ * Main OsFetch class. This class will determine the OS and Architecture details, and hold the data.
+ * <p>
+ * To start fetching, call {@link #populate()}. This is not mandatory however, as this method will be called every time data gets fetched.
+ * @since 2.0.0
+ */
 public final class OsFetch {
     private static boolean populated;
 

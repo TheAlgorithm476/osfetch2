@@ -7,9 +7,25 @@ import java.util.Arrays;
  * @since 2.0.0
  */
 public enum OperatingSystem {
+    /**
+     * Microsoft Windows, running on the NT kernel
+     * @since 2.0.0
+     */
     WINDOWS("Windows", "Windows NT", "WinNT", "Win32"),
+    /**
+     * Apple's macOS. Used to be known as OS X and Mac OS X. Runs on the Darwin kernel
+     * @since 2.0.0
+     */
     MAC_OS("macOS", "OS X", "Mac OS X", "Mac OS"),
+    /**
+     * Collection of all distributions running on the Linux kernel
+     * @since 2.0.0
+     */
     LINUX("Linux", "GNU/Linux"),
+    /**
+     * Any other Operating System that's able to run Java.
+     * @since 2.0.0
+     */
     OTHER("other");
 
     private final String[] NAMES;
